@@ -1,0 +1,82 @@
+/* Global Styles*/
+html {
+  font-size: 18px;
+
+}
+body {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+.site-container {
+  width: 960px;
+  display: flex;
+  justify-content: flex-end;
+}
+/*Header Styles*/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../resources/images/glasses-bg.png);
+  height: 31rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.toparea {
+  background-color: cadetblue;
+  margin-top: 1rem;
+  color: white;
+  padding: 1rem 2rem;
+  height: 3rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.logo img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+nav span {
+  padding-left: 2rem;
+}
+.topbox {
+  background-color: white;
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 10rem;
+  margin-right: -4rem;
+}
+
+/*Main Content Section Styles*/
+section {
+  display: flex;
+  align-items: baseline;
+  align-content: space-between;
+  justify-content: center;
+  margin-top: 3rem;
+  height: 8rem;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 3rem;
+  width: 5rem;
+  align-items: center;
+  text-align: center;
+}
+.image {
+  width: 5rem;
+}
+.paper {
+  width: 3.5rem;
+}
