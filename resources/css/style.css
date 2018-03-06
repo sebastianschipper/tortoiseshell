@@ -20,13 +20,13 @@ header {
   background-image: url(../../resources/images/glasses-bg.png);
   height: 31rem;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 .toparea {
   background-color: cadetblue;
   margin-top: 1rem;
   color: white;
-  padding: 1rem 0rem;;
   height: 3rem;
 }
 .logo {
@@ -47,6 +47,9 @@ nav {
 nav span {
   padding-left: 2rem;
 }
+.mobile_nav {
+  display: none;
+}
 .topbox {
   background-color: white;
   padding: 1.5rem 5rem;
@@ -60,8 +63,6 @@ nav span {
 /*Main Content Section Styles*/
 .main1 {
   display: flex;
-  align-items: center;
-  align-content: space-between;
   justify-content: center;
   margin-top: 3rem;
   height: 8rem;
@@ -73,7 +74,6 @@ nav span {
   width: 5rem;
   align-items: center;
   text-align: center;
-  height: 8rem;
   justify-content: space-between;
 }
 .image {
@@ -117,4 +117,96 @@ footer img {
 }
 footer span {
   padding-left: 1rem;
+}
+
+/*Responsive Styles*/
+
+@media only screen and (max-width: 960px) {
+  .site-container {
+    width: 100%;
+  }
+  .main2 {
+    width: 100%;
+  }
+  .main1 {
+    width: 100%;
+  }
+  .toparea {
+    margin-top: 0rem;
+  }
+  .topbox {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    line-height: 1.2;
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  header {
+    height: 22rem;
+  }
+  .mobile_nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .logo span {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .mobile_nav {
+    display: inline-flex;
+  }
+  header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  .topbox {
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    margin-top: 9rem;
+    width: 100%;
+    margin-right: 0rem;
+    text-align: center;
+  }
+  .main1 {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    margin: 3.77rem 0rem;
+  }
+  .advantages p {
+    font-size: 0.77rem;
+    padding-top: 1rem;
+  }
+  .image {
+    padding-top: 1.54rem;
+  }
+  .main2 {
+    flex-direction: column;
+    padding-top: 0rem;
+  }
+  .infobox {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .infobox p {
+    padding: 0rem 0.5rem;
+  }
+  .title {
+    max-width: 100%;
+    text-align: center;
+  }
+  footer span {
+    display: none;
+  }
+  footer img {
+    padding: 0rem;
+  }
+  footer {
+    width: 100%;
+    justify-content: center;
+  }
 }
